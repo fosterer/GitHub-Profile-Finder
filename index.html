@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Github Profiles</title>
+  </head>
+  <body>
+
+    <h1 class="website">GitHub Profile Finder</h1>
+
+    <form class="user-form" id="form">
+      <input type="text" id="search" placeholder="Search a Github User">
+    </form>
+
+    <h1 class="loading" id="loading">LOADING...</h1>
+
+    <main id="main">
+      <div class="card">
+
+        <div class="cardInfo" id="cardInfo"></div>
+
+        <section class="header">
+          <div class="items-controller">
+              <h5>Show</h5>
+              <select id="itemperpage" onchange="loadChangeValue()">
+                  <option value="11">10</option>
+                  <option value="26">25</option>
+                  <option value="51">50</option>
+                  <option value="76">75</option>
+                  <option value="100">100</option>
+              </select>
+              <h5>Per Page</h5>
+          </div>
+          <div class="search">
+              <h5>Repository Name</h5>
+              <input type="text" name="searchrepo" id="searchrepo" placeholder="Search a repository">
+          </div>
+      </section>
+  
+      <section id="repoCard"></section>
+       
+      <div class="bottom-field">
+          <ul class="pagination">
+              <li class="prev"><a href="#" id="prev">&#139;</a></li>
+              <!--<li class="list"><a href="#">1</a></li>
+              <li class="list"><a href="#">2</a></li>
+              <li class="list"><a href="#">3</a></li>-->
+              <li class="next"><a href="#" id="next">&#155;</a></li>
+          </ul>
+      </div>
+
+      </div>
+
+    </main>
+
+    <h4>Created By Aishwarya Upadhyay</h4>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js" integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
+

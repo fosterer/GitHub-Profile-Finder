@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #231F20;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: max-content;
+  overflow: auto;
+  margin: 0;
+  margin-top: 2%;
+}
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.user-form input {
+  width: 100%;
+  display: block;
+  background-color: #362F32;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.user-form input::placeholder {
+  color: #bbb;
+}
+
+.user-form input:focus {
+  outline: none;
+}
+
+.card {
+  max-width: 800px;
+  background-color: #362F32;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+  padding: 3rem;
+  margin: 0 1.5rem;
+ 
+}
+
+.cardInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 5px solid #2b2b2c;
+  height: 200px;
+  width: 200px;
+}
+
+.user-info {
+  color: #eee;
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-top: 0;
+}
+
+.user-info ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 400px;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.repos {
+  display: flex;
+  flex-direction: column;
+}
+
+.repoCard {
+  max-width: 800px;
+  background-color: #B45F5F;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 2% 1.5rem;
+ 
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user-form {
+    max-width: 400px;
+  }
+}
+
+
+.header {
+  width: 90%;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.items-controller,
+.search {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  padding: 2px;
+  margin: 0 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  font-weight: bolder;
+  color: tomato;
+}
+
+.search>input {
+  outline: none;
+  border: none;
+  padding: 8px;
+  margin: 0 0 0 20px;
+  background: white;
+}
+
+.bottom-field {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination li {
+  list-style: none;
+  padding: 2px;
+  margin: 10px;
+  flex-shrink: 0;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #999;
+  color: #999;
+}
+
+.pagination li.active {
+  background: #32d6aa;
+  color: white;
+  border-color: #32d6aa;
+}
+
+.pagination li a {
+  text-decoration: none;
+  color: inherit;
+  padding: 3px 8px;
+  display: block;
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+.repoLang {
+  font-size: 14px;
+  background-color: #27275a;
+  color: white;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 5px;
+}
+
+.repoName a {
+  color: #f7b605;
+  font-size: 20px;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.loading {
+  display: none;
+}
+
+#main {
+  display: none;
+}
+
+.website {
+  font-family: cursive;
+  color: rgb(241, 147, 5);
+  font-style: italic;
+  font-size: 50px;
+}
